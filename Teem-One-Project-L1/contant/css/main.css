@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+
+:root {
+  --main-color: #198754;
+  --white-color: #eee;
+  --bg: #333;
+  --transition: all 0.4s linear;
+  --bShadow: 0.1rem 0.1rem 0.2rem #666;
+  --primaryFont: 'Roboto', sans-serif;
+  --fontTitle: 'Train One', cursive;
+}
+
+/* 
+#006837
+#74E52A
+#3FAC30
+*/
+
+/*********** global ************/
+body {
+  font-family: var(--primaryFont) !important;
+  text-transform: capitalize;
+}
+
+h3 {
+  color: var(--main-color);
+  font-family: var(--fontTitle) !important;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.active {
+  color: #fff !important;
+}
+
+/*********** header ***********/
+/* nav */
+.navbar {
+  background: var(--main-color);
+  color: #fff;
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: 70px;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.form-control {
+  padding: 0 10rem;
+}
+
+.form-control::placeholder {
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+/* main-header */
+.carousel-item img {
+  max-height: 95vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/*********** footer ***********/
+.main-footer {
+  background: var(--bg);
+  color: var(--white-color);
+}
+.main-footer p {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.main-footer__payment__icons a,
+.main-footer__social__icons a {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  margin-left: 4px;
+  padding: 5px 12px;
+  border-radius: 2px;
+  transition: var(--transition);
+}
+.main-footer__payment__icons a:hover,
+.main-footer__social__icons a:hover {
+  background: var(--main-color);
+  transform: translateY(-20px);
+}
+.dropdown__btn {
+  background: var(--main-color);
+  color: var(--white-color);
+  text-transform: capitalize;
+}
+.dropdown-item {
+  transition: var(--transition);
+}
+.dropdown-item:hover {
+  background: var(--main-color);
+}
+
+/*********** products ***********/
+.fa-star {
+  color: gold;
+}
+
+
+
+
+/* Signin&signup Start */
+.forget-password{
+  text-decoration: none;
+  color: var(--main-color);
+  transition: var(--transition);
+}
+.forget_password:hover{
+  color: var(--main-color);
+}
+.forget_password:visited{
+  color: var(--main-color);
+}
+.signup__bottons--mail ,.signin__bottons--login{
+  font-family: var(--primaryFont);
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-color: var(--main-color);
+  box-shadow:var(--bShadow);
+  transition: var(--transition);
+}
+.signup__bottons--mail:hover ,.signin__bottons--login:hover{
+  background-color: #157347;
+  border-color: #146c43;
+}
+.signup__bottons--facebook ,.signin__bottons--facebook{
+  color: var(--white-color);
+  background-color: #40588a;
+  border-color: #40588a;
+  box-shadow:var(--bShadow);
+  transition: var(--transition);
+}
+.signup__bottons--facebook:hover ,.signin__bottons--facebook:hover{
+  background-color: #344f88;
+  border-color: #344f88;
+}
+/* .signin__span , .signup__span{
+  text-align: ;
+}
+.signin__bottons--awsome  .signup__bottons--awsome{
+  fill: var(--white-color);
+  text-align: start;
+} */
+.signin{
+  border-right: solid 1px lightgray;
+}
+.floatingpassword , .floatinginput{
+  box-sizing: border-box;
+  border: none !important;
+  border-bottom: 2px solid lightgray !important;
+  border-radius: 0px !important;
+  transition: var(--transition);
+}
+.floatingpassword:focus , .floatinginput:focus{
+  box-sizing: border-box;
+  border: none !important;
+  border-bottom: 2px solid var(--main-color) !important;
+  box-shadow: none;
+}
+@media screen and (max-width: 767px) {
+  .signin{
+    border-right : none;
+    padding-bottom: 25px;
+    border-bottom: solid 1px lightgray;
+  }
+}
+.signup-text{
+  padding: 3.5rem 0;
+}
+/* .signup{

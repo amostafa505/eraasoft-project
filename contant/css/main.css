@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab&family=Zilla+Slab+Highlight:wght@700&display=swap");
+
+:root {
+  --main-color: #006837;
+  --light-color: #74e52a;
+  --green-color: #3fac30;
+  --white-color: #eee;
+  --bg: #333;
+  --transition: all 0.4s linear;
+  --bShadow: 0.1rem 0.1rem 0.2rem #666;
+  --primaryFont: "Zilla Slab", serif;
+  --fontTitle: "Zilla Slab Highlight", cursive;
+}
+
+/* 
+#006837
+#74E52A
+#3FAC30
+*/
+
+h1 {
+  font-family: var(--fontTitle);
+  background-color: var(--light-color);
+}
+h2 {
+  font-family: var(--primaryFont);
+  background-color: var(--light-color);
+  color: var(--white-color);
+}
+/* Signin&signup Start */
+.login{
+  border-right: 1px gray;
+}
+.forget-password{
+  text-decoration: none;
+  color: var(--main-color);
+  transition: var(--transition);
+}
+.forget_password:hover{
+  color: var(--main-color);
+}
+.forget_password:visited{
+  color: var(--main-color);
+}
+.signup__bottons--mail ,.signin__bottons--login{
+  font-family: var(--primaryFont);
+  background-color: var(--light-color);
+  color: var(--white-color);
+  border-color: var(--light-color);
+  box-shadow:var(--bShadow);
+  transition: var(--transition);
+}
+.signup__bottons--mail:hover ,.signin__bottons--login:hover{
+  background-color: var(--green-color);
+  border-color: var(--green-color);
+}
+.signup__bottons--facebook ,.signin__bottons--facebook{
+  color: var(--white-color);
+  background-color: #40588a;
+  border-color: #40588a;
+  box-shadow:var(--bShadow);
+  transition: var(--transition);
+}
+.signup__bottons--facebook:hover ,.signin__bottons--facebook:hover{
+  background-color: #344f88;
+  border-color: #344f88;
+}
+/* .signin__span , .signup__span{
+  text-align: ;
+}
+.signin__bottons--awsome  .signup__bottons--awsome{
+  fill: var(--white-color);
+  text-align: start;
+} */
+.signin{
+  border-right: solid 1px lightgray;
+}
+.floatingpassword , .floatinginput{
+  box-sizing: border-box;
+  border: none !important;
+  border-bottom: 2px solid lightgray !important;
+  border-radius: 0px !important;
+  transition: var(--transition);
+}
+.floatingpassword:focus , .floatinginput:focus{
+  box-sizing: border-box;
+  border: none !important;
+  border-bottom: 2px solid var(--main-color) !important;
+  box-shadow: none;
+}
+/* .signup{
+  
+}
+.signup__form{
+  
+}
+/* Signin&signup End */
